@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.body{
+display:flex;
+justify-content:center;
+align-items:center;
+color:grey;}
+body{
+background-image:url("https://i.pinimg.com/236x/fc/27/0c/fc270c73e66f51c4b74642bebd6ee9a3.jpg");
+background-size:contain;
+background-repeat:repeat-x;
+}
+   form{
+   float:right;
+   margin:20px:
+   }
+   input[type="text"],input[type="password"]{
+   margin:9px;
+   padding:8px;
+   border:2px solid grey;
+   border-radius:10px;
+   
+   }
+   input[type="submit"]{
+   width:100%;
+   margin:10px;
+   padding:7px;}
+   #hii{
+   display:inline-block;
+   }
+</style>
+    </head>
+    <div id="hii" class="row">
+    <img class="col col-1 cols-lg-1" src="https://i.pinimg.com/736x/9b/72/3a/9b723aa088fcfe06293e074df1e833b0.jpg" width="70px" height="70px" style="border-radius:50%;margin-left:20px;margin-top:20px;">
+    <center>
+    <h1 style="color:grey;text-align:center;text-shadow:2px 2px 2px black;font-weight:bold;font-style:italic;justify-content:center;" class="col col-11 col-lg-11">RAJIV GANDHI UNIVERSITY OF KNOWLEDGE -CATTERING EDUCATION TO THE RURAL YOUTH</h1></center></div>
+    <body>
+    <div class="body">
+     <form class="my-4">
+     <input type="text" id="ip-1" placeholder="First name*" required>
+    
+     <input type="text" id="ip-2" placeholder="Last Name*" required><br>
+     <input type="text" id="ip-3" placeholder="Password"  >
+      <input type="text" id="ip-5" placeholder="Confirm passoword*"><br> 
+     
+     <input type="text" id="ip-4" placeholder="Organisation name*" style="width:98%;" cols-sm-4 required><br>
+     <input type="text" id="ip-7" placeholder="Phone Number" >
+     <input type="text" id="ip-6" placeholder="Work E-mail Id*" required><br>
+     <input type="checkbox" style="margin-left:10px;" id="ji">
+    I am agreeing Terms and Conditions<br>
+    
+     <input type="submit" value="Submit" id="h"  onclick="validate()">
+          </form>
+
+     <script>
+     function validate(){
+     var a=document.getElementById("ip-1").value
+     var b=document.getElementById("ip-2").value
+     var c=document.getElementById("ip-3").value
+     var d=document.getElementById("ip-7").value
+     var e=document.getElementById("ip-4").value
+     var f=document.getElementById("ip-5").value
+     var g=document.getElementById("ip-6").value
+     var j=document.getElementById("ji")
+     var h=document.getElementById("h")
+     
+    
+     var dp=/^\d{10}$/
+    // var gp=/^[^\s@]+\@[^\s@]+\.[^\s@]+(\.[^\s@]{2-4})*/
+     var p= /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$%^&*!,*(){}]).{8,}$/
+     var h=/^[^%@]*$/
+     
+     var a1;
+  var a2;var a3;var a4;var a6;var a5;
+  
+   if(p.test(c) && c==f){
+     
+a1=1
+} 
+    else{
+   a1=0}
+     if(dp.test(d)){
+  a2=1 }
+     else{
+ a2=0
+    }
+    var y=/^[^\s@]{3,}@[^\s@]{3,6}\.+[^\s@]{2,5}(\.[^\s@]){0,5}$/
+   if(y.test(g)){
+   a3=1}//
+   else{
+   a3=0} 
+  if(h.test(a)){
+a4=1}
+  else{
+  a4=0 }
+  
+if(h.test(e)){
+a5=1
+
+}
+else{
+a5=0
+
+}
+  if(h.test(b)){
+  a6=1 }
+  else{
+  a6=0
+  } var a7;
+ if(document.getElementById("ji").checked){
+ a7=1
+} 
+else{
+a7=0
+}
+var sum = a1+a2+a3+a4+a5+a6+a7
+
+if(sum==7){
+alert("Your form inputs are True  Thanks for submission")
+
+
+}
+else{
+alert("something went wrong")
+}
+  }
+ 
+  
+</script>
+   </div> 
+   
+</html>
+
